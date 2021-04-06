@@ -22,8 +22,8 @@ from sklearn.metrics import cohen_kappa_score
 from functools import reduce
 
 # data
-
-df7 = pd.read_pickle('C:/Users/rakov/Desktop/Kutatások/NLP/Adatok/Depi adatok Renitől/szövegfeldolgozó scriptek/Marcinak/data/df_pickled_final')
+TEXTDIR = None
+df7 = pd.read_pickle(TEXTDIR)
 df7 = df7.dropna()
 
 train, test = train_test_split(df7, test_size=0.25, random_state=12)
